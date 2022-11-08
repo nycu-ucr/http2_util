@@ -1,17 +1,18 @@
-//+build !debug
+//go:build !debug
+// +build !debug
 
 package http2_util
 
 import (
 	"crypto/tls"
 	"fmt"
-	"net/http"
 	"os"
 	"time"
 
+	"github.com/nycu-ucr/gonet/http"
+	"github.com/nycu-ucr/net/http2"
+	"github.com/nycu-ucr/net/http2/h2c"
 	"github.com/pkg/errors"
-	"golang.org/x/net/http2"
-	"golang.org/x/net/http2/h2c"
 )
 
 // NewServer returns a server instance with HTTP/2.0 and HTTP/2.0 cleartext support

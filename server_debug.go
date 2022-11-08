@@ -1,11 +1,12 @@
-//+build debug
+//go:build debug
+// +build debug
 
 package http2_util
 
 import (
 	"crypto/tls"
+	"github.com/nycu-ucr/gonet/http"
 	"github.com/pkg/errors"
-	"net/http"
 	"os"
 )
 
