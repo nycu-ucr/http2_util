@@ -28,8 +28,9 @@ func NewServer(bindAddr string, preMasterSecretLogPath string, handler http.Hand
 		IdleTimeout: 1 * time.Millisecond,
 	}
 	server = &http.Server{
-		Addr:    bindAddr,
-		Handler: h2c.NewHandler(handler, h2Server),
+		USING_ONVM_SOCKET: true, // Select which to use, ONVM or TCP
+		Addr:              bindAddr,
+		Handler:           h2c.NewHandler(handler, h2Server),
 	}
 
 	if preMasterSecretLogPath != "" {
