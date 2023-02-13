@@ -16,7 +16,10 @@ import (
 	"github.com/pkg/errors"
 )
 
-const USE_ONVM = true
+const (
+	USE_ONVM_CONN    = true
+	USE_ONVM_HANDLER = true
+)
 
 // NewServer returns a server instance with HTTP/2.0 and HTTP/2.0 cleartext support
 // If this function cannot open or create the secret log file,
@@ -32,12 +35,20 @@ func NewServer(bindAddr string, preMasterSecretLogPath string, handler http.Hand
 		IdleTimeout: 10 * time.Second,
 	}
 
-	if USE_ONVM {
+	if USE_ONVM_CONN {
 		// ONVM
-		server = &http.Server{
-			USING_ONVM_SOCKET: true,
-			Addr:              bindAddr,
-			Handler:           onvm2c.NewHandler(handler, h2s),
+		if USE_ONVM_HANDLER {
+			server = &http.Server{
+				USING_ONVM_SOCKET: true,
+				Addr:              bindAddr,
+				Handler:           onvm2c.NewHandler(handler, h2s),
+			}
+		} else {
+			server = &http.Server{
+				USING_ONVM_SOCKET: true,
+				Addr:              bindAddr,
+				Handler:           h2c.NewHandler(handler, h2s),
+			}
 		}
 	} else {
 		// TCP
