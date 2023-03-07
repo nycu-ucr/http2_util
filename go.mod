@@ -3,8 +3,8 @@ module github.com/nycu-ucr/http2_util
 go 1.19
 
 require (
-	github.com/nycu-ucr/gonet v0.0.0-20230224064046-12c0ad6b3211
-	github.com/nycu-ucr/net v0.0.0-20230224063949-d0c9417d961d
+	github.com/nycu-ucr/gonet v0.0.0-20230307120806-af99a970179a
+	github.com/nycu-ucr/net v0.0.0-20230307120859-5f5d7afdaf03
 	github.com/pkg/errors v0.9.1
 )
 

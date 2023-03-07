@@ -5,10 +5,10 @@ github.com/cornelk/hashmap v1.0.8/go.mod h1:RfZb7JO3RviW/rT6emczVuC/oxpdz4UsSB2L
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/nycu-ucr/gonet v0.0.0-20230224064046-12c0ad6b3211 h1:5jDQkxPiAjoITjxPpVHicC+VUrd6rlit0afOSBe/SMc=
-github.com/nycu-ucr/gonet v0.0.0-20230224064046-12c0ad6b3211/go.mod h1:Sz4ZVhcMgT3X7tcy/sDkzPwPJtLTdslKt0blQXD7ID4=
-github.com/nycu-ucr/net v0.0.0-20230224063949-d0c9417d961d h1:DG2WobILKdMqDIXJDNmVIDpkC3BUvR5MXPNrxpGIpks=
-github.com/nycu-ucr/net v0.0.0-20230224063949-d0c9417d961d/go.mod h1:YhEbietZ3Djp1HrSoJX3uSooye2EtI0EV+WrUOE7fs4=
+github.com/nycu-ucr/gonet v0.0.0-20230307120806-af99a970179a h1:DG9LmtuEdLzuUS6E2ZGAmqzbmaG2h2qNJqBNHdLFy84=
+github.com/nycu-ucr/gonet v0.0.0-20230307120806-af99a970179a/go.mod h1:cPF8F0SmgbT7zt0+o5jqnLoExn3sH3X33KHpOqMX32U=
+github.com/nycu-ucr/net v0.0.0-20230307120859-5f5d7afdaf03 h1:63CLILoS3GKYRDxUfhr+I6cA+qOkzVeeJIWtTwm5TzU=
+github.com/nycu-ucr/net v0.0.0-20230307120859-5f5d7afdaf03/go.mod h1:DOdS2y4k3JZ2dWZ9UHlhmfbSbxapyoykA9JsSELPR00=
 github.com/nycu-ucr/onvmpoller v0.0.0-20230222141454-8145d720d05c h1:4i0Ca0mJ+uFxBXAP0LJV7eiFVHxeBAvEYcesqQJDe9s=
 github.com/nycu-ucr/onvmpoller v0.0.0-20230222141454-8145d720d05c/go.mod h1:KGOJFB22ziiaSu3FEpKZLBmwwbH2XIvcI7AigdWRxNU=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
