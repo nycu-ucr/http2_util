@@ -5,8 +5,8 @@ github.com/cornelk/hashmap v1.0.8/go.mod h1:RfZb7JO3RviW/rT6emczVuC/oxpdz4UsSB2L
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/nycu-ucr/gonet v0.0.0-20230321073411-20599842edf4 h1:QquJjiQ899XAYI7OPvq65mda6bNhAhhhxyFgbbdP+JE=
-github.com/nycu-ucr/gonet v0.0.0-20230321073411-20599842edf4/go.mod h1:0cS8PFcBsV02LXKHXNY+bBVXvADHlnpdfEYF5dMqFiE=
+github.com/nycu-ucr/gonet v0.0.0-20230321075119-e5fedd233439 h1:flrmtCUn6KFNCsO0wgdTrBwlCnTpPOGafUDdFXflNRk=
+github.com/nycu-ucr/gonet v0.0.0-20230321075119-e5fedd233439/go.mod h1:0cS8PFcBsV02LXKHXNY+bBVXvADHlnpdfEYF5dMqFiE=
 github.com/nycu-ucr/net v0.0.0-20230321073243-55e3984ea72c h1:3bgfHM06MS4Yqy5Mo4h3UC5LQqx1w6uA8PNxVoCFyVU=
 github.com/nycu-ucr/net v0.0.0-20230321073243-55e3984ea72c/go.mod h1:F7Wp3i49fZYmFClC3yP2zTcbIOBOZ3G9WjCPUzjVhbI=
 github.com/nycu-ucr/onvmpoller v0.0.0-20230320121227-d45eb5171b4e h1:BoBqBkZLPDFIuCRrGCTXRyJSl7HGgFsa1DjNjKD4Eew=

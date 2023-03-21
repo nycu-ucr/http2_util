@@ -17,8 +17,9 @@ import (
 )
 
 const (
-	USE_ONVM_CONN    = true
-	USE_ONVM_HANDLER = true
+	USE_ONVM_CONN     = true
+	USE_ONVM_XIO_CONN = true
+	USE_ONVM_HANDLER  = true
 )
 
 // NewServer returns a server instance with HTTP/2.0 and HTTP/2.0 cleartext support
@@ -36,24 +37,28 @@ func NewServer(bindAddr string, preMasterSecretLogPath string, handler http.Hand
 	}
 
 	if USE_ONVM_CONN {
-		// ONVM
+		// ONVM Connection
 		if USE_ONVM_HANDLER {
+			// ONVM HTTP handler
 			server = &http.Server{
-				USING_ONVM_SOCKET: true,
-				Addr:              bindAddr,
-				Handler:           onvm2c.NewHandler(handler, h2s),
+				USING_ONVM_SOCKET:     USE_ONVM_CONN,
+				USING_ONVM_XIO_SOCKET: USE_ONVM_XIO_CONN,
+				Addr:                  bindAddr,
+				Handler:               onvm2c.NewHandler(handler, h2s),
 			}
 		} else {
+			// TCP HTTP handler
 			server = &http.Server{
-				USING_ONVM_SOCKET: true,
-				Addr:              bindAddr,
-				Handler:           h2c.NewHandler(handler, h2s),
+				USING_ONVM_SOCKET:     USE_ONVM_CONN,
+				USING_ONVM_XIO_SOCKET: USE_ONVM_XIO_CONN,
+				Addr:                  bindAddr,
+				Handler:               h2c.NewHandler(handler, h2s),
 			}
 		}
 	} else {
-		// TCP
+		// TCP Connection
 		server = &http.Server{
-			USING_ONVM_SOCKET: false,
+			USING_ONVM_SOCKET: USE_ONVM_CONN,
 			Addr:              bindAddr,
 			Handler:           h2c.NewHandler(handler, h2s),
 		}
